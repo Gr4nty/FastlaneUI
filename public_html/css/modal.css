@@ -4,21 +4,33 @@
     Author     : Granty
     Description:
         Purpose of the stylesheet follows.
-*/
 
-root { 
-    display: block;
-}
 /* Login Box
 =================================================================== */
+
 .login-box {
-  width: 300px;
+  width: 340px;
   padding: 20px;
   margin: 100px auto;
   background: #fff;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
+}
+.login-box-inner {
+  width: 300px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+.login-box-inner h2 {
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 300
+}
+.login-box-inner h3 {
+    font-size: 15px;
+    line-height: 15px;
 }
 .login-box input[type="text"],
 .login-box input[type="password"] {
@@ -33,16 +45,35 @@ root {
   padding: 0px 10px;
   height: 40px;
   margin: 5px auto;
+  width: 100%;
 }
-.login-box button {
-  margin: 15px 0px !important;
+.login-box-inner .remember{
+margin-top: 20px;
+margin-bottom: 20px;
+float: left;
 }
-.login-box .remember {
-  margin-top: 20px;
-  float: left;
+
+.login-box-inner a ,a:focus ,a:hover{
+color: #2a6496;
 }
-h2 {
-font-size: 16px;
-line-height: 16px;
-font-weight: 300;
+/* Forms
+=================================================================== */
+input[placeholder],
+[placeholder],
+*[placeholder] {
+  color: white !important;
 }
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: white;
+}
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: white;
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: white;
+}
+
+
