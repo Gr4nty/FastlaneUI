@@ -61,8 +61,8 @@
             <h1 class="cover-heading">Fastlane</h1>
             <p class="lead">If you want to play, please Login or Sign Up</p>
             <p class="lead">
-              <a href="#" class="btn btn-lg btn-info">Sign Up</a>
-               <button class="btn btn-lg btn-info" data-toggle="modal" data-target="#loginModal">Login</button>
+              <a class="btn btn-lg btn-info" data-toggle="modal" data-target="#signupModal">Sign Up</a>
+               <a class="btn btn-lg btn-info" data-toggle="modal" data-target="#loginModal">Login</a>
             </p>         
           </div>
           <div class="mastfoot">
@@ -102,7 +102,27 @@
             </div>
         </div>
     </div>
-
+    <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="login-box">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <div class="login-box-inner">
+                <h2 class="login-box-inner">Sign Up</h2>
+                <form class="form-horizontal" action="index.html" method="post">
+                    <fieldset>
+                        <div class="input-group">
+                          <span class="input-group-addon">@</span>
+                          <input type="text" class="form-control" placeholder="Username">
+                        </div>
+                    </fieldset>	
+                </form>
+                <hr>
+                    <h3>Forgot Password?</h3>
+                    <p>
+                    No problem, <a href="#">click here</a> to get a new password.
+                    </p>
+            </div>
+        </div>
+    </div>
     <!-- Bootstrap core JavaScript -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
